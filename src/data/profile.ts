@@ -50,10 +50,10 @@ export type Insight = {
 
 export const heroContent = {
   name: "Aman Kumar",
-  headline: "Final-Year B.Tech CSE | MERN Stack Developer | SDE Aspirant",
+  headline: "New-grad SDE | Full-Stack Developer | SDE-1 Aspirant",
   subline:
-    "Final-year B.Tech CSE student (AI & DS specialization) at IIIT Manipur with strong foundations in Data Structures, Algorithms, and MERN stack development. Experienced in building scalable, responsive web applications and REST APIs. Seeking SDE roles to build high-performance software solutions.",
-  availability: "Available for full-time SDE roles",
+    "New-grad SDE with 1906 LeetCode rating and production experience shipping Next.js + Django features for 60k+ user fintech workflows. Final-year B.Tech CSE (AI & DS) student at IIIT Manipur. Seeking full-time SDE-1 roles.",
+  availability: "Available for full-time SDE-1 roles",
   location: "Mumbai • Open to relocation",
   avatar: "https://drive.google.com/uc?export=view&id=168GS1NogGpAoDTxYaFrEeg276_UkPgE4",
   ctaPrimary: {
@@ -71,9 +71,9 @@ export const heroContent = {
 };
 
 export const stats = [
-  { label: "LeetCode rating", value: "1867" },
-  { label: "LeetCode Problems Solved", value: "900+" },
-  { label: "GeeksforGeeks Problems", value: "700+" },
+  { label: "LeetCode Rating", value: "1906" },
+  { label: "LeetCode Problems Solved", value: "1000+" },
+  { label: "Codeforces Rating", value: "1455" },
   { label: "Contest Achievement", value: "LeetCode Rank 563" },
   { label: "Current Role", value: "SDE Intern" },
   { label: "Years of Coding", value: "3+" },
@@ -86,28 +86,26 @@ export const experiences: Experience[] = [
     period: "Aug 2025 – Present",
     location: "Mumbai",
     summary:
-      "Building responsive frontend features for financial applications and contributing to telecaller platform development.",
+      "Developed core backend and frontend features for Telecaller Workflow, Data Collection, and Policy Manager modules using Django, Next.js and TypeScript.",
     bullets: [
-      "Built and optimized responsive frontend features for financial applications using Next.js and JavaScript.",
-      "Integrated Django templates with backend workflows for seamless data handling and API integration.",
-      "Developed UI flows for telecaller application with RESTful API integration and performance optimization.",
-      "Ensured maintainable, performant, and user-friendly interfaces for production applications.",
+      "Developed core backend and frontend features for Telecaller Workflow, Data Collection, and Policy Manager modules using Django, Next.js and TypeScript; built scalable APIs serving 60k+ customer records.",
+      "Designed and implemented 100+ REST APIs with validation, retries, and error handling, reducing production submission failures while optimizing Next.js performance.",
+      "Debugged and resolved 10+ production issues on live systems, improving internal tool reliability.",
     ],
     link: "https://www.saarathifinance.com/",
   },
   {
     company: "MyRevue",
-    role: "Intern",
+    role: "Frontend Intern",
     period: "Oct 2024 – Feb 2025",
     location: "Remote",
     summary:
-      "Conducted user research and optimized digital content for enhanced user experience.",
+      "Implemented production-ready React frontend components and led user research with interactive Figma prototypes.",
     bullets: [
-      "Conducted comprehensive user research, wireframing, and prototyping to improve website design.",
-      "Enhanced user experience through iterative design improvements and usability testing.",
-      "Edited and optimized video content for enhanced visual storytelling and audience engagement.",
-      "Collaborated with cross-functional teams to align design decisions with business objectives.",
+      "Implemented production-ready React frontend components that improved interface responsiveness and delivered a significantly more polished user experience.",
+      "Led user research and developed interactive Figma prototypes; collaborated with the team to iterate designs, resulting in significantly improved website usability and layout consistency.",
     ],
+    link: "https://myrevue.app/",
   },
 ];
 
@@ -115,23 +113,47 @@ export const projects: Project[] = [
   {
     title: "Prasikshan — SSB Preparation Platform",
     description:
-      "Developed a responsive SSB preparation platform supporting 25+ daily active users with timers, image prompts, and scalable architecture. Implemented using MERN stack achieving 100% mobile responsiveness and 35% reduction in page load time.",
+      "Built a full-stack SSB preparation platform with 7 test modules, currently used by 20+ active users. Features JWT authentication, OTP-based password recovery, dual-layer Redis rate limiting, Redis-based session caching, AI-powered test review via FastAPI microservice with Azure OpenAI, performance analytics, leaderboards, and an admin CMS. Containerized with Docker and Nginx.",
     stack: [
-      "JavaScript",
-      "React.js",
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "Redis",
+      "JWT",
+      "Tailwind CSS",
+      "FastAPI",
+      "Azure OpenAI",
+      "Docker",
+      "Nginx",
+    ],
+    liveUrl: "https://www.prasikshan.akt9802.in/",
+    repoUrl: "https://github.com/akt9802/prasikshan",
+    image: "/prasikshan.png",
+  },
+  {
+    title: "FinSense — Intelligent Financial Analysis Platform",
+    description:
+      "A premium financial analytics platform for smarter spending decisions. Features expense tracking with category/merchant details, recurring expense automation, monthly budget planning with budget-vs-actual tracking, JWT-based auth with bcrypt, and a modern glassmorphism UI with animated components.",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
       "Node.js",
       "Express.js",
       "MongoDB",
+      "JWT",
       "Tailwind CSS",
+      "Docker",
+      "Nginx",
     ],
-    repoUrl: "https://github.com/akt9802/prasikshan",
-    image:
-      "https://opengraph.githubassets.com/1/akt9802/prasikshan",
+    liveUrl: "https://finsense.akt9802.in/",
+    repoUrl: "https://github.com/akt9802/FinSense",
+    image: "/finsense.png",
   },
   {
     title: "LocalSearch++ — Local Search Engine",
     description:
-      "Built a local search engine in C++ using inverted and positional indexing for fast keyword and exact phrase search. Implemented TF-IDF based relevance ranking with flat-file index persistence enabling efficient index reuse and low-latency query processing.",
+      "Built a local document search engine in C++ that crawls .txt files recursively, performs text normalization, tokenization, stopword removal, and builds inverted & positional indexes for fast keyword and exact phrase search. Implemented TF-IDF relevance ranking and a CLI-based search tool with flat-file index persistence to enable index-once, query-many and faster startup by loading prebuilt indexes.",
     stack: ["C++", "Inverted Index", "TF-IDF", "File I/O", "Data Structures"],
     repoUrl: "https://github.com/akt9802/localsearch",
     image: "https://opengraph.githubassets.com/1/akt9802/localsearch-plus-plus",
@@ -142,81 +164,82 @@ export const education: Education[] = [
   {
     school: "Indian Institute of Information Technology, Manipur",
     program: "B.Tech • Computer Science and Engineering (AI & DS)",
-    period: "2022 – Present",
+    period: "2022 – Expected May 2026",
     location: "Manipur, India",
     details: "Final-year student with strong foundations in Data Structures, Algorithms, OOP, DBMS, OS, and Computer Networks.",
+    score: "CGPA: 7.9",
   },
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
     title: "Core CS Fundamentals",
-    items: ["Data Structures & Algorithms", "OOP", "DBMS", "OS", "Computer Networks"],
+    items: ["Data Structures & Algorithms", "OOPs", "DBMS", "OS", "Computer Networks"],
   },
   {
     title: "Programming Languages",
-    items: ["C++", "JavaScript", "TypeScript", "Python", "Dart"],
+    items: ["C++", "JavaScript", "TypeScript"],
   },
   {
     title: "Frontend",
-    items: ["Next.js", "React.js", "Flutter", "HTML", "CSS", "Tailwind", "Bootstrap", "Recoil"],
+    items: ["Next.js", "React.js", "CSS", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "Middleware"],
+    items: ["Node.js", "Express.js", "Django", "RESTful APIs"],
   },
   {
     title: "Databases & Storage",
-    items: ["MongoDB", "MySQL"],
+    items: ["MongoDB", "MySQL", "Redis"],
   },
   {
-    title: "Deployment & Hosting",
-    items: ["Vercel", "Render", "GitHub Actions"],
+    title: "Deployment & DevOps",
+    items: ["Docker", "Vercel", "Render", "GitHub Actions"],
   },
   {
     title: "Tools & Platforms",
-    items: ["Git", "GitHub", "Postman", "Figma", "Linux", "VS Code"],
+    items: ["Git", "GitHub", "Postman", "Figma", "Linux"],
   },
 ];
 
 export const profileHighlights: ProfileHighlight[] = [
   {
     platform: "LeetCode",
-    summary: "Solved 900+ problems with consistent problem-solving approach.",
-    metric: "Max rating 1867 (Knight)",
+    summary: "Solved 1000+ DSA problems with consistent problem-solving approach.",
+    metric: "Max rating 1906 (Knight)",
     link: "https://leetcode.com/akt9802",
   },
   {
-    platform: "GeeksforGeeks",
-    summary: "Solved 700+ DSA problems across various topics and difficulty levels.",
-    metric: "3 Stars rating",
-    link: "https://auth.geeksforgeeks.org/user/akt9802/practice",
+    platform: "Codeforces",
+    summary: "Active competitive programmer with Specialist rank on Codeforces.",
+    metric: "Max Rating 1455 (Specialist)",
+    link: "https://codeforces.com/profile/akt9802",
   },
   {
     platform: "LeetCode Contests",
     summary: "Global Rank 563 in LeetCode Weekly Contest 460.",
-    metric: "Top 1000 performers",
+    metric: "Top performers globally",
     link: "https://leetcode.com/akt9802",
   },
 ];
 
 export const insights: Insight[] = [
   {
-    title: "Building Scalable MERN Applications",
+    title: "LeetCode Weekly Contest 460: Global Rank 563",
     summary:
-      "Lessons from developing production-grade SSB preparation platform with 25+ daily active users.",
-    link: "https://www.linkedin.com/in/aman931120/",
+      "Achieved a global rank of 563 among thousands of participants in LeetCode Weekly Contest 460.",
+    link: "https://leetcode.com/akt9802",
   },
   {
-    title: "Full-Stack Development with Next.js and Express",
+    title: "GFG: Rank 1 in College",
     summary:
-      "Practical insights from developing responsive financial applications and RESTful APIs.",
-    link: "https://github.com/akt9802",
+      "Ranked 1st in college on GeeksforGeeks, demonstrating consistent problem-solving excellence.",
+    link: "https://auth.geeksforgeeks.org/user/akt9802/practice",
   },
   {
-    title: "Optimizing Frontend Performance",
+    title: "Central India Hackathon (CIH): Finalist",
     summary:
-      "Techniques to reduce page load time by 35% and improve user experience in React applications.",
+      "Achieved finalist recognition among 2,000+ teams at the Central India Hackathon.",
     link: "https://www.linkedin.com/in/aman931120/",
   },
 ];
@@ -239,8 +262,7 @@ export const contactLinks = [
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/aman-kumar-",
+    value: "linkedin.com/in/akt9802",
     href: "https://www.linkedin.com/in/aman931120/",
   },
 ];
-

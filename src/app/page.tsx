@@ -223,7 +223,7 @@ export default function Home() {
             <SectionHeading
               kicker="CODING PROFILES"
               title="Practice that powers production work"
-              description="Daily reps across LeetCode, GFG, and CodeChef keep data structures sharp for real-world shipping."
+              description="Daily reps across LeetCode and Codeforces keep data structures sharp for real-world shipping."
             />
           </div>
           <div className="grid gap-6 md:grid-cols-3 auto-rows-fr">
