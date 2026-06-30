@@ -2,17 +2,17 @@ import { contactLinks } from "@/data/profile";
 
 export function ContactSection() {
   return (
-    <section className="rounded-[32px] border border-white/5 bg-gradient-to-br from-[#0f172a] via-[#020617] to-black p-10">
+    <section className="rounded-4xl border border-white/5 bg-linear-to-br from-[#0f172a] via-[#020617] to-black p-10">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-2xl space-y-3">
           <p className="text-sm uppercase tracking-[0.3em] text-[#34d399]">
             LET&apos;S TALK
           </p>
           <h2 className="text-4xl font-semibold text-white">
-            Do you have any opportunities for me?
+            Do you have any software developer opportunities for me?
           </h2>
           <p className="text-base text-zinc-400">
-            I am open to internships and full-time offers in the field of Software Engineering.
+            I am open to internships and full-time software developer roles.
           </p>
         </div>
         <div className="w-full max-w-sm rounded-2xl border border-white/5 bg-white/5 p-6">

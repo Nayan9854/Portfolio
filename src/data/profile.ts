@@ -39,7 +39,7 @@ export type ProfileHighlight = {
   platform: string;
   summary: string;
   metric: string;
-  link: string;
+  link?: string;
 };
 
 export type Insight = {
@@ -49,220 +49,178 @@ export type Insight = {
 };
 
 export const heroContent = {
-  name: "Aman Kumar",
-  headline: "New-grad SDE | Full-Stack Developer | SDE-1 Aspirant",
+  name: "Nayan Jyoti Bhattarai",
+  headline: "Software Developer | Full-Stack Developer",
   subline:
-    "New-grad SDE with 1906 LeetCode rating and production experience shipping Next.js + Django features for 60k+ user fintech workflows. Final-year B.Tech CSE (AI & DS) student at IIIT Manipur. Seeking full-time SDE-1 roles.",
-  availability: "Available for full-time SDE-1 roles",
-  location: "Mumbai • Open to relocation",
-  avatar: "https://drive.google.com/uc?export=view&id=168GS1NogGpAoDTxYaFrEeg276_UkPgE4",
+    "Computer Science and Engineering student at IIIT Senapati, Manipur, building production-ready web apps with React, Next.js, TypeScript, Node.js, and modern backend tooling.",
+  availability: "Open to software developer roles",
+  location: "Bengaluru • Open to relocation",
+  avatar: "/nayan_latest.png",
   ctaPrimary: {
     label: "Connect on LinkedIn",
-    href: "https://www.linkedin.com/in/aman931120/",
+    href: "https://www.linkedin.com/in/nayan-jyoti-bhattarai/",
   },
   ctaSecondary: {
     label: "View GitHub",
-    href: "https://github.com/akt9802",
-  },
-  ctaThird: {
-    label: "View Resume",
-    href: "https://drive.google.com/file/d/18l79ZlWN5KROMAsdBezk6uL_QYEXv3hv/view?usp=sharing",
+    href: "https://github.com/Nayan9854",
   },
 };
 
 export const stats = [
+  { label: "LeetCode Problems", value: "1100+" },
   { label: "LeetCode Rating", value: "1906" },
-  { label: "LeetCode Problems Solved", value: "1000+" },
-  { label: "Codeforces Rating", value: "1455" },
-  { label: "Contest Achievement", value: "LeetCode Rank 563" },
-  { label: "Current Role", value: "SDE Intern" },
+  { label: "CodeChef Rating", value: "1801" },
+  { label: "Hackathon Win", value: "Ahouba 2025" },
+  { label: "Current Role", value: "Software Developer Intern" },
   { label: "Years of Coding", value: "3+" },
 ];
 
 export const experiences: Experience[] = [
   {
-    company: "Saarathi Finance",
-    role: "SDE Intern",
-    period: "Aug 2025 – Present",
-    location: "Mumbai",
-    summary:
-      "Developed core backend and frontend features for Telecaller Workflow, Data Collection, and Policy Manager modules using Django, Next.js and TypeScript.",
-    bullets: [
-      "Developed core backend and frontend features for Telecaller Workflow, Data Collection, and Policy Manager modules using Django, Next.js and TypeScript; built scalable APIs serving 60k+ customer records.",
-      "Designed and implemented 100+ REST APIs with validation, retries, and error handling, reducing production submission failures while optimizing Next.js performance.",
-      "Debugged and resolved 10+ production issues on live systems, improving internal tool reliability.",
-    ],
-    link: "https://www.saarathifinance.com/",
-  },
-  {
-    company: "MyRevue",
-    role: "Frontend Intern",
-    period: "Oct 2024 – Feb 2025",
+    company: "Wyreflow Technologies",
+    role: "Software Developer Intern",
+    period: "Feb 2026 – May 2026",
     location: "Remote",
     summary:
-      "Implemented production-ready React frontend components and led user research with interactive Figma prototypes.",
+      "Engineered responsive recruitment platform interfaces and improved production workflows with React.js, TypeScript, Tailwind CSS, and Razorpay.",
+    link: "https://wyreflow.com/",
     bullets: [
-      "Implemented production-ready React frontend components that improved interface responsiveness and delivered a significantly more polished user experience.",
-      "Led user research and developed interactive Figma prototypes; collaborated with the team to iterate designs, resulting in significantly improved website usability and layout consistency.",
+      "Engineered 50+ Figma designs into production-ready, responsive interfaces using React.js, TypeScript, and Tailwind CSS for a large-scale recruitment platform.",
+      "Improved page load times of key pages by approximately 20–30% through lazy loading, component memoization, code splitting, and rendering optimizations.",
+      "Integrated secure payment workflows using Razorpay and collaborated with QA to resolve 100+ frontend issues, improving stability and user experience.",
+      "Led an 8-member team, coordinating feature implementation, pull request reviews, and sprint deliverables.",
     ],
-    link: "https://myrevue.app/",
   },
 ];
 
 export const projects: Project[] = [
   {
-    title: "Prasikshan — SSB Preparation Platform",
+    title: "Sentinel — CRPF Personnel & Weapon Management System",
     description:
-      "Built a full-stack SSB preparation platform with 7 test modules, currently used by 20+ active users. Features JWT authentication, OTP-based password recovery, dual-layer Redis rate limiting, Redis-based session caching, AI-powered test review via FastAPI microservice with Azure OpenAI, performance analytics, leaderboards, and an admin CMS. Containerized with Docker and Nginx.",
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "MongoDB",
-      "Redis",
-      "JWT",
-      "Tailwind CSS",
-      "FastAPI",
-      "Azure OpenAI",
-      "Docker",
-      "Nginx",
-    ],
-    liveUrl: "https://www.prasikshan.akt9802.in/",
-    repoUrl: "https://github.com/akt9802/prasikshan",
-    image: "/prasikshan.png",
+      "Built a full-stack platform for secure management of personnel records, weapon inventories, and duty assignments for CRPF operations. Implemented role-based JWT authentication, dashboards, and real-time messaging.",
+    stack: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Socket.io"],
+    liveUrl: "https://sentinel-frontend-mu.vercel.app/",
+    repoUrl: "https://github.com/Nayan9854/crpf",
+    image: "/sentinel.png",
   },
   {
-    title: "FinSense — Intelligent Financial Analysis Platform",
+    title: "BookShare — Peer-to-Peer Book Sharing Platform",
     description:
-      "A premium financial analytics platform for smarter spending decisions. Features expense tracking with category/merchant details, recurring expense automation, monthly budget planning with budget-vs-actual tracking, JWT-based auth with bcrypt, and a modern glassmorphism UI with animated components.",
-    stack: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "Tailwind CSS",
-      "Docker",
-      "Nginx",
-    ],
-    liveUrl: "https://finsense.akt9802.in/",
-    repoUrl: "https://github.com/akt9802/FinSense",
-    image: "/finsense.png",
+      "Built a full-stack platform enabling users to lend, borrow, and track books with real-time availability and doorstep delivery. Implemented JWT auth, role-based authorization, secure Stripe payments, and PostgreSQL persistence.",
+    stack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "JWT", "Stripe"],
+    liveUrl: "https://book-share-madhav060s-projects.vercel.app/",
+    repoUrl: "https://github.com/Nayan9854/BookShare",
+    image: "/bookshare.png",
   },
   {
-    title: "LocalSearch++ — Local Search Engine",
+    title: "The Canvas",
     description:
-      "Built a local document search engine in C++ that crawls .txt files recursively, performs text normalization, tokenization, stopword removal, and builds inverted & positional indexes for fast keyword and exact phrase search. Implemented TF-IDF relevance ranking and a CLI-based search tool with flat-file index persistence to enable index-once, query-many and faster startup by loading prebuilt indexes.",
-    stack: ["C++", "Inverted Index", "TF-IDF", "File I/O", "Data Structures"],
-    repoUrl: "https://github.com/akt9802/localsearch",
-    image: "https://opengraph.githubassets.com/1/akt9802/localsearch-plus-plus",
+      "A web-based graphic design and content creation platform that mirrors the core functionality of Canva. Built with TypeScript, Stripe, Google auth, and GitHub authentication.",
+    stack: ["TypeScript", "Stripe", "Google Auth", "GitHub Auth", "Canva-like Editor"],
+    liveUrl: "https://canva-clone-ali.vercel.app/",
+    repoUrl: "https://github.com/Nayan9854/canva-clone",
+    image: "/canvaclone.png",
   },
 ];
 
 export const education: Education[] = [
   {
-    school: "Indian Institute of Information Technology, Manipur",
-    program: "B.Tech • Computer Science and Engineering (AI & DS)",
-    period: "2022 – Expected May 2026",
+    school: "Indian Institute of Information Technology, Senapati, Manipur",
+    program: "Bachelor of Technology • Computer Science and Engineering",
+    period: "2022 – 2026",
     location: "Manipur, India",
-    details: "Final-year student with strong foundations in Data Structures, Algorithms, OOP, DBMS, OS, and Computer Networks.",
-    score: "CGPA: 7.9",
+    details: "Bachelor of Technology in Computer Science and Engineering with a focus on software development, product engineering, and core CS fundamentals.",
   },
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Core CS Fundamentals",
-    items: ["Data Structures & Algorithms", "OOPs", "DBMS", "OS", "Computer Networks"],
-  },
-  {
-    title: "Programming Languages",
-    items: ["C++", "JavaScript", "TypeScript"],
+    title: "Languages",
+    items: ["C++", "TypeScript", "JavaScript"],
   },
   {
     title: "Frontend",
-    items: ["Next.js", "React.js", "CSS", "Tailwind CSS"],
+    items: ["React.js", "Next.js", "Tailwind CSS", "HTML5", "CSS3"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "Django", "RESTful APIs"],
+    items: ["Node.js", "Express.js", "REST APIs"],
   },
   {
-    title: "Databases & Storage",
-    items: ["MongoDB", "MySQL", "Redis"],
+    title: "Databases",
+    items: ["PostgreSQL", "MongoDB", "MySQL"],
   },
   {
-    title: "Deployment & DevOps",
-    items: ["Docker", "Vercel", "Render", "GitHub Actions"],
+    title: "Auth & ORM",
+    items: ["JWT", "Auth.js", "Prisma", "Drizzle ORM"],
   },
   {
-    title: "Tools & Platforms",
-    items: ["Git", "GitHub", "Postman", "Figma", "Linux"],
+    title: "Cloud & Tools",
+    items: ["AWS", "Git", "GitHub", "Postman", "Cloudinary"],
+  },
+  {
+    title: "Core CS",
+    items: ["Data Structures & Algorithms", "OOP", "DBMS", "Operating Systems", "Computer Networks", "Linux"],
   },
 ];
 
 export const profileHighlights: ProfileHighlight[] = [
   {
     platform: "LeetCode",
-    summary: "Solved 1000+ DSA problems with consistent problem-solving approach.",
+    summary: "Solved 1100+ algorithmic and data structure problems.",
     metric: "Max rating 1906 (Knight)",
-    link: "https://leetcode.com/akt9802",
+    link: "https://leetcode.com/u/akt9802/",
   },
   {
-    platform: "Codeforces",
-    summary: "Active competitive programmer with Specialist rank on Codeforces.",
-    metric: "Max Rating 1455 (Specialist)",
-    link: "https://codeforces.com/profile/akt9802",
+    platform: "CodeChef",
+    summary: "Rated 4-star with strong contest performance.",
+    metric: "Max rating 1801",
+    link: "https://www.codechef.com/users/iiitm_cse_60",
   },
   {
-    platform: "LeetCode Contests",
-    summary: "Global Rank 563 in LeetCode Weekly Contest 460.",
-    metric: "Top performers globally",
-    link: "https://leetcode.com/akt9802",
+    platform: "Hackathons",
+    summary: "Won Ahouba 2025 with a 4-member team building an AI-driven real-time energy management system.",
+    metric: "Winner",
   },
 ];
 
 export const insights: Insight[] = [
   {
-    title: "LeetCode Weekly Contest 460: Global Rank 563",
-    summary:
-      "Achieved a global rank of 563 among thousands of participants in LeetCode Weekly Contest 460.",
-    link: "https://leetcode.com/akt9802",
+    title: "LeetCode: Knight Level",
+    summary: "Reached a maximum LeetCode rating of 1906 while solving 1100+ problems.",
+    link: "https://leetcode.com/u/akt9802/",
   },
   {
-    title: "GFG: Rank 1 in College",
-    summary:
-      "Ranked 1st in college on GeeksforGeeks, demonstrating consistent problem-solving excellence.",
-    link: "https://auth.geeksforgeeks.org/user/akt9802/practice",
+    title: "CodeChef: 4-Star",
+    summary: "Achieved a maximum CodeChef rating of 1801.",
+    link: "https://www.codechef.com/users/iiitm_cse_60",
   },
   {
-    title: "Central India Hackathon (CIH): Finalist",
-    summary:
-      "Achieved finalist recognition among 2,000+ teams at the Central India Hackathon.",
-    link: "https://www.linkedin.com/in/aman931120/",
+    title: "Ahouba 2025 Winner",
+    summary: "Led a 4-member team to win a hackathon project focused on real-time energy management.",
+    link: "https://www.linkedin.com/in/nayan-jyoti-bhattarai/",
   },
 ];
 
 export const contactLinks = [
   {
     label: "Email",
-    value: "akt9802@gmail.com",
-    href: "mailto:akt9802@gmail.com",
+    value: "nayan9854bhattarai@gmail.com",
+    href: "mailto:nayan9854bhattarai@gmail.com",
   },
   {
     label: "Phone",
-    value: "+91 93112 09203",
-    href: "tel:+919311209203",
+    value: "+91 99289 14557",
+    href: "tel:+919928914557",
   },
   {
     label: "GitHub",
-    value: "github.com/akt9802",
-    href: "https://github.com/akt9802",
+    value: "github.com/Nayan9854",
+    href: "https://github.com/Nayan9854",
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/akt9802",
-    href: "https://www.linkedin.com/in/aman931120/",
+    value: "linkedin.com/in/nayan-jyoti-bhattarai",
+    href: "https://www.linkedin.com/in/nayan-jyoti-bhattarai/",
   },
 ];

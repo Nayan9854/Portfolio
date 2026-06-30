@@ -78,12 +78,12 @@ export default function Home() {
               : "opacity-0 -translate-y-8 blur-md scale-95 pointer-events-none"
           }`}
         >
-          <div className="relative mx-auto max-w-6xl rounded-[999px] border border-white/10 bg-gradient-to-r from-white/[0.08] via-white/[0.06] to-white/[0.08] px-8 py-6 shadow-[0_25px_70px_rgba(0,0,0,0.4),0_0_60px_rgba(249,115,22,0.1)] backdrop-blur-xl">
+          <div className="relative mx-auto max-w-7xl rounded-[999px] border border-white/10 bg-gradient-to-r from-white/[0.08] via-white/[0.06] to-white/[0.08] px-8 py-6 shadow-[0_25px_70px_rgba(0,0,0,0.4),0_0_60px_rgba(249,115,22,0.1)] backdrop-blur-xl">
             {/* Animated gradient border glow */}
             <div className="absolute -inset-[1px] rounded-[999px] bg-gradient-to-r from-[#f97316]/20 via-[#c026d3]/20 to-[#2563eb]/20 opacity-60 blur-sm -z-10 animate-gradient-border" />
             
-            <div className="flex flex-wrap items-center justify-between gap-8">
-              <div className="flex items-center gap-4">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
+              <div className="flex min-w-0 shrink-0 items-center gap-4">
                 <div className="relative">
                   <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#f97316] to-[#c026d3] opacity-30 blur-md animate-pulse-slow" />
                   <div className="relative h-12 w-12 rounded-full bg-gradient-to-br from-[#f97316]/40 to-[#c026d3]/40 border border-white/20" />
@@ -92,12 +92,12 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.4em] text-zinc-400 font-medium">
                     Portfolio
                   </p>
-                  <p className="text-2xl font-bold tracking-[0.15em] text-white bg-gradient-to-r from-white via-zinc-100 to-white bg-clip-text text-transparent">
-                    Aman Kumar
+                  <p className="whitespace-nowrap bg-gradient-to-r from-white via-zinc-100 to-white bg-clip-text text-xl font-bold tracking-[0.1em] text-transparent sm:text-2xl lg:text-[1.35rem] xl:text-2xl xl:tracking-[0.15em]">
+                    Nayan Jyoti Bhattarai
                   </p>
                 </div>
               </div>
-              <nav className="flex flex-wrap items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-zinc-400 sm:text-xs">
+              <nav className="flex w-full flex-wrap items-center justify-start gap-2 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-zinc-400 lg:w-auto lg:flex-nowrap lg:justify-end lg:gap-1 xl:gap-2 xl:text-xs xl:tracking-[0.3em]">
                 {[
                   { label: "Overview", href: "#overview" },
                   { label: "Experience", href: "#experience" },
@@ -109,7 +109,7 @@ export default function Home() {
                   <a
                     key={item.label}
                     href={item.href}
-                    className="group relative rounded-full border border-transparent px-4 py-2 transition-all duration-300 hover:border-white/30 hover:text-white hover:bg-white/5"
+                    className="group relative rounded-full border border-transparent px-2.5 py-2 transition-all duration-300 hover:border-white/30 hover:text-white hover:bg-white/5 xl:px-4"
                   >
                     <span className="relative z-10">{item.label}</span>
                     <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[#f97316]/10 to-[#c026d3]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -162,7 +162,7 @@ export default function Home() {
             ))}
           </div>
           <div className={`flex justify-center transition-all duration-1000 ${visibleSections.has('projects') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '600ms' }}>
-            <a href="https://github.com/akt9802" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white/40 hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)]">
+            <a href="https://github.com/Nayan9854" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-white/40 hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)]">
               Explore more on GitHub
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
             </a>

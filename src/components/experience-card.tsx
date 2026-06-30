@@ -20,7 +20,20 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.location}
         </span>
       </div>
-      <p className="mt-3 text-lg font-medium text-white flex-shrink-0">{experience.company}</p>
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 flex-shrink-0">
+        <p className="text-lg font-medium text-white">{experience.company}</p>
+        {experience.link && (
+          <a
+            href={experience.link}
+            target="_blank"
+            rel="noreferrer"
+            className="group/link inline-flex w-fit items-center gap-2 rounded-full border border-[#818cf8]/40 bg-[#818cf8]/10 px-3 py-1.5 text-sm font-semibold text-[#c7d2fe] transition-all duration-300 hover:translate-x-1 hover:border-[#818cf8] hover:bg-[#818cf8]/20 hover:text-white"
+          >
+            Visit site
+            <span aria-hidden className="transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1">↗</span>
+          </a>
+        )}
+      </div>
       <p className="mt-2 text-sm text-zinc-400 flex-shrink-0 min-h-[2.5rem]">{experience.summary}</p>
       <ul className="mt-4 flex-1 space-y-2 text-sm text-zinc-300">
         {experience.bullets.map((item) => (
@@ -30,17 +43,6 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           </li>
         ))}
       </ul>
-      {experience.link && (
-        <a
-          href={experience.link}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white/90 hover:text-white flex-shrink-0"
-        >
-          Visit site
-          <span aria-hidden>↗</span>
-        </a>
-      )}
     </article>
   );
 }

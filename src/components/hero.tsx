@@ -88,17 +88,21 @@ export function Hero() {
           </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {stats.map((stat) => (
+          {stats.map((stat) => {
+            const isLongValue = stat.value.length > 16;
+
+            return (
             <div
               key={stat.label}
               className="rounded-2xl border border-white/5 bg-white/5 p-4 text-center transition-all duration-300 hover:border-white/20 hover:bg-white/10 hover:scale-105"
             >
-              <p className="text-3xl font-semibold text-white">{stat.value}</p>
+              <p className={isLongValue ? "text-2xl font-semibold leading-tight text-white" : "text-3xl font-semibold text-white"}>{stat.value}</p>
               <p className="mt-1 text-xs uppercase tracking-[0.3em] text-zinc-400">
                 {stat.label}
               </p>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

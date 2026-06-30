@@ -13,33 +13,31 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ayush-portfolio.vercel.app"),
-  title: "Aman Kumar · Full-Stack Web Developer",
+  metadataBase: new URL("https://nayan-jyoti-bhattarai.vercel.app"),
+  title: "Nayan Jyoti Bhattarai · Software Developer",
   description:
-    "Aman Kumar is a full-stack developer and DSA enthusiast from IIIT Manipur building thoughtful web experiences and research tooling.",
+    "Nayan Jyoti Bhattarai is a software developer and full-stack engineer at IIIT Senapati, Manipur building thoughtful web experiences and product software.",
   openGraph: {
-    title: "Aman Kumar · Product-focused full-stack developer",
+    title: "Nayan Jyoti Bhattarai · Software Developer",
     description:
-      "Engineering immersive UI, performant APIs, and research platforms across India and beyond.",
-    url: "https://ayush-portfolio.vercel.app",
-    siteName: "Aman Kumar Portfolio",
+      "Engineering polished UI, performant APIs, and production-ready web apps.",
+    url: "https://nayan-jyoti-bhattarai.vercel.app",
+    siteName: "Nayan Jyoti Bhattarai Portfolio",
     images: [
       {
-        url: "https://opengraph.githubassets.com/1/ayushrskiaa/Restaurant-Reservation",
+        url: "/nayan_latest.png",
         width: 1200,
         height: 630,
-        alt: "Aman Kumar portfolio preview",
+        alt: "Nayan Jyoti Bhattarai portfolio preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aman Kumar · Product-focused full-stack developer",
+    title: "Nayan Jyoti Bhattarai · Software Developer",
     description:
-      "Full-stack developer crafting intuitive interfaces, robust systems, and research tooling.",
-    images: [
-      "https://opengraph.githubassets.com/1/ayushrskiaa/Restaurant-Reservation",
-    ],
+      "Software developer crafting intuitive interfaces, robust systems, and production-ready web apps.",
+    images: ["/nayan_latest.png"],
   },
 };
 
