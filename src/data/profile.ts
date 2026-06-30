@@ -56,13 +56,20 @@ export const heroContent = {
   availability: "Open to software developer roles",
   location: "Bengaluru • Open to relocation",
   avatar: "/nayan_latest.png",
+
   ctaPrimary: {
     label: "Connect on LinkedIn",
     href: "https://www.linkedin.com/in/nayan-jyoti-bhattarai/",
   },
+
   ctaSecondary: {
     label: "View GitHub",
     href: "https://github.com/Nayan9854",
+  },
+
+  ctaThird: {
+    label: "Resume",
+    href: "/Nayan_one.pdf",   // <-- replace with your actual PDF filename
   },
 };
 
