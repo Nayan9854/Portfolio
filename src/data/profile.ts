@@ -69,7 +69,7 @@ export const heroContent = {
 
   ctaThird: {
     label: "Resume",
-    href: "/Nayan_one.pdf",   // <-- replace with your actual PDF filename
+    href: "/Nayan_one.pdf",   
   },
 };
 
